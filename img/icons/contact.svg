@@ -1,0 +1,8 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Telefon -->
+    <path d="M4 5C4 4.44772 4.44772 4 5 4H7C7.55228 4 8 4.44772 8 5V7C8 7.55228 7.55228 8 7 8H6C6 11.866 10.134 16 14 16V15C14 14.4477 14.4477 14 15 14H17C17.5523 14 18 14.4477 18 15V17C18 17.5523 17.5523 18 17 18H15C9.47715 18 4 12.5228 4 7V5Z"
+          stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>

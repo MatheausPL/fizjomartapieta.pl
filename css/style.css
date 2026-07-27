@@ -1,0 +1,166 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    --color-dark: #333;
+    --color-primary: #4a7c59;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* LAYOUT 20% / 80% */
+.layout {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    background: linear-gradient(180deg, #f7f5f2 0%, #f3f1ee 100%);
+    border-right: 1px solid #e0ddd8;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.06);
+}
+
+/* LOGO */
+.sidebar__logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e0ddd8;
+}
+
+.sidebar__logo img {
+    width: 140px;
+    opacity: 0.95;
+}
+
+/* NAVIGATION */
+.sidebar__nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.sidebar__nav a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 8px 4px;
+    border-radius: 6px;
+    transition: 0.25s ease;
+}
+
+/* ACTIVE LINK */
+.sidebar__nav a.active {
+    background: #d7e9df; /* lekko przyciemniona pastelowa zieleń */
+    color: #4a7c59;
+    font-weight: 600;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.sidebar__nav a.active .icon {
+    opacity: 1;
+}
+
+/* HOVER */
+.sidebar__nav a:hover {
+    background: #e8e3dd; /* właściwy, ciemniejszy beż */
+    padding-left: 10px;
+}
+
+/* ICONS */
+.icon {
+    width: 22px;
+    height: 22px;
+    opacity: 0.85;
+    transition: 0.25s ease;
+}
+
+/* ANIMACJA IKON PO OTWARCIU SIDEBARU */
+.sidebar.sidebar--open .icon {
+    animation: iconFade 0.4s ease forwards;
+}
+
+@keyframes iconFade {
+    from {
+        opacity: 0;
+        transform: translateX(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ANIMACJA LINKÓW PO OTWARCIU SIDEBARU */
+.sidebar.sidebar--open a {
+    animation: linkFade 0.4s ease forwards;
+}
+
+@keyframes linkFade {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* CONTENT */
+.content {
+    padding: 40px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 260px;
+        background: #f7f5f2;
+        border-right: 1px solid #e0ddd8;
+        box-shadow: 0 0 20px rgba(0,0,0,0.06);
+
+        transform: translateX(-100%) scale(0.95);
+        opacity: 0;
+        transition: transform 0.45s cubic-bezier(0.25, 0.1, 0.25, 1),
+                    opacity 0.35s ease;
+        z-index: 1000;
+    }
+
+    .sidebar.sidebar--open {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+
+    .sidebar__toggle {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background: none;
+        border: none;
+        z-index: 1100;
+    }
+}
