@@ -20,6 +20,25 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           username: ${{ secrets.SSH_USER }}
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+          # wysyłamy tylko pliki strony
           local_path: "./"
+
+          # ścieżka na serwerze z sekretu
           remote_path: ${{ secrets.REMOTE_PATH }}
+
+          # NIE kasujemy plików na serwerze
           delete_remote_files: false
+
+          # ignorujemy wszystko, czego nie wolno wysyłać
+          sftpArgs: >
+            -r
+            --exclude '.git'
+            --exclude '.github'
+            --exclude 'README.md'
+            --exclude 'LICENSE'
+            --exclude '.gitignore'
+            --exclude 'deploy.yml'
+            --exclude '.DS_Store'
+            --exclude 'node_modules'
+            --exclude '*.md'
