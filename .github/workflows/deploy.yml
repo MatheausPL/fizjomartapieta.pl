@@ -21,19 +21,10 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-          # wysyłamy tylko pliki strony
-          local_path: "./"
+          # wysyłamy tylko folder public/
+          local_path: "./public"
 
           # katalog public_html na serwerze
           remote_path: ${{ secrets.REMOTE_PATH }}
 
           delete_remote_files: false
-
-          # wykluczamy wszystko, czego nie chcemy na serwerze
-          exclude: |
-            .git
-            .github
-            README.md
-            .gitignore
-            node_modules
-            *.md
