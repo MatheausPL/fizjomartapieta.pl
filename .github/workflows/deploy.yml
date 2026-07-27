@@ -13,6 +13,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Remove unwanted folders before deploy
+        run: |
+          rm -rf .git
+          rm -rf .github
+
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
@@ -21,10 +26,9 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-          # wysyłamy tylko folder public/
-          local_path: "./public"
+          # wysyłamy root repo, ale już bez .git i .github
+          local_path: "./"
 
-          # katalog public_html na serwerze
           remote_path: ${{ secrets.REMOTE_PATH }}
 
           delete_remote_files: false
