@@ -79,18 +79,35 @@ body {
     opacity: 1;
 }
 
-/* HOVER */
-.sidebar__nav a:hover {
-    background: #e8e3dd; /* właściwy, ciemniejszy beż */
-    padding-left: 10px;
-}
-
+ 
 /* ICONS */
 .icon {
     width: 22px;
     height: 22px;
     opacity: 0.85;
     transition: 0.25s ease;
+}
+
+.sidebar__btn {
+    display: block;
+    text-align: center;
+    background: #f7f5f2; /* Twoja zieleń */
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    transition: 0.25s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+.sidebar__btn:hover {
+    background: #e8e3dd; /* właściwy, ciemniejszy beż */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12); 
+    padding-left: 10px;
 }
 
 /* ANIMACJA IKON PO OTWARCIU SIDEBARU */
