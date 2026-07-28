@@ -1,13 +1,6 @@
-const navToggle = document.querySelector('.nav__toggle');
-const navList = document.querySelector('.nav__list');
-
-if (navToggle && navList) {
-    navToggle.addEventListener('click', () => {
-        navList.classList.toggle('nav--open');
-    });
-}
-
 document.addEventListener("DOMContentLoaded", () => {
+
+    // automatyczne podświetlanie aktywnej strony
     const links = document.querySelectorAll(".sidebar__nav a");
     const current = window.location.pathname.split("/").pop();
 
@@ -16,4 +9,19 @@ document.addEventListener("DOMContentLoaded", () => {
             link.classList.add("active");
         }
     });
+
+    // toggle sidebar (mobile)
+    const navToggle = document.querySelector('.sidebar__toggle');
+    const sidebar = document.querySelector('.sidebar');
+
+    if (navToggle && sidebar) {
+        navToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('sidebar--open');
+
+            // blokada scrolla na mobile
+            document.body.style.overflow =
+                sidebar.classList.contains('sidebar--open') ? 'hidden' : '';
+        });
+    }
+
 });
