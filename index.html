@@ -1,151 +1,134 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fizjoterapia Jaworzno – Marta</title>
-    <meta name="description" content="Profesjonalna fizjoterapia w Jaworznie. Masaże, rehabilitacja, terapia manualna.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Fizjoterapia | Strona prywatnej praktyki</title>
+    <meta name="description" id="meta-description" content="Fizjoterapia Marta Pięta – profesjonalna fizjoterapeutka w Jaworznie. Terapia manualna, fizjoterapia uroginekologiczna, wizyty domowe. Zadzwoń i umów wizytę: +48 453 482 415.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" as="style" href="css/style.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <div class="layout">
+    <div class="app-shell">
         <aside class="sidebar">
-            <a href="index.html" class="sidebar__logo">
-                <img src="img/logo/logo.webp" alt="Logo fizjoterapii">
-            </a>
+            <div class="sidebar__mobile-bar">
+                <div class="sidebar__mobile-brand">
+                    <img src="img/logo/logo.webp" alt="Logo Marta Pięta" width="36" height="36" />
+                    <span>Marta Pięta</span>
+                </div>
+                <div class="sidebar__mobile-actions">
+                    <a href="tel:+48453482415" class="sidebar__mobile-call" aria-label="Zadzwoń do fizjoterapeutki">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </a>
+                    <button class="sidebar__toggle" aria-label="Otwórz menu" aria-expanded="false">
+                        <span class="toggle-icon">☰</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="brand" aria-label="Logo firmy">
+                <img class="brand__logo" src="img/logo/logo.webp" alt="Marta Pięta Logo" width="130" height="130">
+            </div>
+
+            <div class="sidebar__cta-container">
+                <a href="tel:+48453482415" class="sidebar__cta" aria-label="Zadzwoń i umów wizytę">
+                    <span class="cta__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </span>
+                    <span class="cta__text">
+                        <small>Umów wizytę</small>
+                        <strong>+48 453 482 415</strong>
+                    </span>
+                </a>
+            </div>
+
             <nav class="sidebar__nav">
-                <ul>
-                    <li>
-                        <a href="about-me.html">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="8" r="4" />
-                                <path d="M4 21C4 16.5817 7.58172 13 12 13C16.4183 13 20 16.5817 20 21" />
-                            </svg>
-                            O mnie
-                        </a>
-                    </li>
-                    <li>
-                        <a href="first-visit.html">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M11 14h1v4" />
-                                <path d="M16 2v4" />
-                                <path d="M3 10h18" />
-                                <path d="M8 2v4" />
-                                <rect x="3" y="4" width="18" height="18" rx="2" />
-                            </svg>
-                            Pierwsza wizyta
-                        </a>
-                    </li>
-                    <li>
-                        <a href="how-work.html">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
-                                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                                <path d="m9 14 2 2 4-4" />
-                            </svg>
-                            Jak pracuję
-                        </a>
-                    </li>
-                    <li>
-                        <a href="work-location.html">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0" />
-                                <circle cx="12" cy="8" r="2" />
-                                <path
-                                    d="M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712" />
-                            </svg>
-                            Gdzie pracuję
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pricing.html">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="3" y="4" width="18" height="18" rx="2" />
-                                <path d="M8 2v4" />
-                                <path d="M16 2v4" />
-                                <path d="M3 10h18" />
-                                <path d="M11 14h1v4" />
-                            </svg>
-                            Cennik
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M16 2v6h6" />
-                                <path d="m22 2-6 6" />
-                                <path
-                                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
-                            </svg>
-                            Kontakt
-                        </a>
-                    </li>
-                </ul>
+                <a href="#o-mnie" data-route="o-mnie" class="active">
+                    <span class="nav__icon icon-user">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                    </span>
+                    O mnie
+                </a>
+                <a href="#pierwsza-wizyta" data-route="pierwsza-wizyta">
+                    <span class="nav__icon icon-calendar">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M11 14h1v4" />
+                            <path d="M16 2v4" />
+                            <path d="M3 10h18" />
+                            <path d="M8 2v4" />
+                            <rect x="3" y="4" width="18" height="18" rx="2" />
+                        </svg>
+                    </span>
+                    Pierwsza wizyta
+                </a>
+                <a href="#jak-pracuje" data-route="jak-pracuje">
+                    <span class="nav__icon icon-check">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                            <path d="m9 14 2 2 4-4" />
+                        </svg>
+                    </span>
+                    Jak pracuję
+                </a>
+                <a href="#gdzie-pracuje" data-route="gdzie-pracuje">
+                    <span class="nav__icon icon-location">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0" />
+                            <circle cx="12" cy="8" r="2" />
+                            <path d="M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712" />
+                        </svg>
+                    </span>
+                    Gdzie pracuję
+                </a>
+                <a href="#cennik" data-route="cennik">
+                    <span class="nav__icon icon-price">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" />
+                            <path d="M8 2v4" />
+                            <path d="M16 2v4" />
+                            <path d="M3 10h18" />
+                            <path d="M11 14h1v4" />
+                        </svg>
+                    </span>
+                    Cennik
+                </a>
+                <a href="#kontakt" data-route="kontakt">
+                    <span class="nav__icon icon-contact">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 2v6h6" />
+                            <path d="m22 2-6 6" />
+                            <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                        </svg>
+                    </span>
+                    Kontakt
+                </a>
             </nav>
-            <button class="sidebar__toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="3" y1="6" x2="21" y2="6" />
-                    <line x1="3" y1="12" x2="21" y2="12" />
-                    <line x1="3" y1="18" x2="21" y2="18" />
-                </svg>
-            </button>
+
+            <div class="sidebar__footer">
+                <div class="sidebar__footer-accent"></div>
+                <p>mgr Marta Pięta</p>
+                <small>Fizjoterapeutka • PWZFz: 19460</small>
+                <div class="sidebar__location-chip">
+                    <span class="chip-dot"></span>
+                    Jaworzno & Wizyty Domowe
+                </div>
+            </div>
         </aside>
+
         <main class="content">
-            <section class="hero">
-                <div class="hero__text glass">
-                    <h1>Profesjonalna fizjoterapia w Jaworznie</h1>
-                    <p class="hero__subtitle">
-                        Skuteczna terapia, indywidualne podejście i pełna troska o Twoje zdrowie.
-                    </p>
-
-                    <div class="hero__features">
-                        <div class="feature">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                            </svg>
-                            <span>Doświadczona specjalistka</span>
-                        </div>
-
-                        <div class="feature">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10" />
-                                <path d="M12 8v8M8 12h8" />
-                            </svg>
-                            <span>Holistyczne podejście</span>
-                        </div>
-
-                        <div class="feature">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 12h16M4 12a8 8 0 0 1 16 0" />
-                            </svg>
-                            <span>Terapia manualna i masaże</span>
-                        </div>
-                    </div>
-
-                    <div class="hero__cta">
-                        <a href="contact.html" class="btn">Umów się na wizytę</a>
-                        <a href="about-me.html" class="link">Poznaj mnie lepiej →</a>
-                    </div>
-                </div>
-
-                <div class="hero__image">
-                    <img src="img/photos/marta.webp" alt="Marta Pięta – fizjoterapeutka">
-                </div>
-            </section>
+            <section id="view" class="view" aria-live="polite"></section>
         </main>
     </div>
-    <script src="js/main.js"></script>
-</body>
 
+    <a href="tel:+48453482415" class="fab-call" id="fab-call" aria-label="Zadzwoń i umów wizytę">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+    <script src="js/main.js" defer></script>
+</body>
 </html>
