@@ -14,6 +14,9 @@
     --color-card-border: rgba(69, 104, 80, 0.22);
     --font-heading: 'Cormorant Garamond', Georgia, serif;
     --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-section-p: 'Manrope', sans-serif;
+    --font-sction-h2: 'Cardo', serif;
+    --font-method-header: 'Comfortaa', sans-serif;
     --shadow-main: 0 24px 60px -12px rgba(20, 32, 24, 0.14);
     --shadow-card: 0 8px 24px -4px rgba(20, 32, 24, 0.08);
     --shadow-hover: 0 16px 36px -6px rgba(27, 46, 33, 0.16);
@@ -459,58 +462,63 @@ body::after {
     border: 1px solid var(--color-card-border);
     border-radius: var(--radius-main);
     box-shadow: var(--shadow-main);
-    padding: 2.6rem;
+    padding: 1rem;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     position: relative;
     overflow: hidden;
     animation: cardFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) ease-out;
+    background: linear-gradient(to top, rgba(135, 165, 142, 0.10), #FFFFFF);
 }
 
-.card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--color-accent), var(--color-primary), var(--color-accent));
-    opacity: 0.85;
-}
+
 
 /* UNIFIED SECTION HEADER */
 .section-header {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
 }
 
-.section-tag {
-    display: inline-flex;
-    align-items: center;
+.card .section-tag {
+    display: flex;
+    flex-direction: column;  /* Układa elementy pionowo, jeden pod drugim */
+    align-items: stretch;    /* Rozciąga elementy wewnętrzne na pełną szerokość */
+    align-self: stretch;     /* Rozciąga ten kontener na pełną szerokość rodzica */
+    width: 100%;             /* Dodatkowe zabezpieczenie pełnej szerokości */
     gap: 0.4rem;
-    align-self: flex-start;
-    padding: 0.35rem 0.85rem;
-    border-radius: 999px;
-    background: linear-gradient(135deg, rgba(135, 165, 142, 0.18), rgba(82, 115, 93, 0.12));
-    border: 1px solid rgba(82, 115, 93, 0.18);
+    padding: 0.1rem 0.1rem;
+    border-radius: 15px 15px 0 0; 
+    background: transparent;
     color: var(--color-accent-strong);
-    font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 2.0rem;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.2rem; 
+    text-align: center;
 }
 
-.section-header h2 {
-    font-family: var(--font-heading);
-    font-size: clamp(2rem, 3.5vw, 2.75rem);
-    font-weight: 700;
+.card .section-tag h2 {
+    font-family: var(--font-sction-h2);
+    font-weight: 700;           /* Wyrazisty, ale nie za ciężki */
+    font-size: 2.4rem;          /* Odpowiednio duży, czytelny rozmiar */
+    letter-spacing: -0.01em;    /* Lekkie przybliżenie liter dodaje nowoczesności */
+    color: var(--color-accent-strong);
+    text-align: center;
     margin: 0;
-    line-height: 1.15;
-    color: var(--color-primary-dark);
-    letter-spacing: -0.01em;
+    border-bottom: 1px solid #a5a8a6;
+    padding-bottom: 0.5rem;
+    box-shadow: 0 4px 10 -2px #7b7c7b;
+}
+
+/* 2. OPIS POD NAGŁÓWKIEM */
+.card .section-tag p {
+    font-family: var(--font-section-p);
+    font-weight: 400;           /* Lekka, czysta grubość do dłuższego tekstu */
+    font-size: 1.4rem;          /* Standardowy, komfortowy rozmiar */
+    line-height: 1.6;           /* Przestrzeń między liniami, która daje oddech dla oczu */
+    letter-spacing: 0.01em;     /* Subtelny odstęp ułatwiający czytanie */
+    text-align: center;
 }
 
 .section-header p {
@@ -623,14 +631,13 @@ body::after {
 .pricing-grid {
     display: grid;
     gap: 1.2rem;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     margin-top: 0.5rem;
 }
 
 /* BASE CARD STYLE FOR ALL SUB-CARDS */
 .method-card,
 .location-card,
-.pricing-card,
 .contact-card {
     background: linear-gradient(135deg, #fefefe 0%, #f8f5ed 100%);
     border: 1px solid var(--color-card-border);
@@ -642,8 +649,47 @@ body::after {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start; 
     transition: var(--transition);
+    
+}
+.pricing-card {
+    background: linear-gradient(135deg, #fefefe 0%, #f8f5ed 100%);
+    border: 1px solid var(--color-card-border);
+    border-radius: var(--radius-card);
+     padding: 1.2rem 1.5rem; 
+    box-shadow: var(--shadow-card);
+    /* Performance fix: removed backdrop-filter (costly GPU layer per card) */
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    flex-direction: column;
+    justify-content: flex-start; 
+    transition: var(--transition);
+    grid-template-columns: 1fr 120px; /* lewa szeroka, prawa wąska */
+    grid-template-rows: auto auto;   /* dwa wiersze */
+    gap: 0.6rem;
+
+}
+
+.left-top {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.left-bottom {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.right-full {
+    grid-column: 2;
+    grid-row: 1 / span 2; /* SCALENIE dwóch wierszy */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    font-weight: 700;
 }
 
 .method-card:hover,
@@ -660,42 +706,25 @@ body::after {
     display: flex;
     align-items: center;
     margin-bottom: 0.8rem;
-}
-
-.method-number {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.3rem;
-    height: 2.3rem;
-    border-radius: 50%;
-    background: linear-gradient(135deg, rgba(69, 104, 80, 0.14), rgba(69, 104, 80, 0.25));
-    color: var(--color-primary-dark);
-    font-size: 0.85rem;
-    font-weight: 800;
-    letter-spacing: 0.05em;
-    margin-right: 0.8rem;
-    flex-shrink: 0;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-}
-
-.method-card:hover .method-number {
-    transform: scale(1.12);
-    background: linear-gradient(135deg, rgba(69, 104, 80, 0.25), rgba(69, 104, 80, 0.42));
-    box-shadow: 0 0 0 4px rgba(69, 104, 80, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    gap:0.75rem;
 }
 
 .method-card h3,
 .location-card h3,
 .pricing-card h3,
-.contact-card h3 {
+.contact-card h3 { 
     margin: 0 0 0.5rem;
-    font-family: var(--font-heading);
-    font-size: 1.35rem;
+    font-family: var(--font-body);
+    font-size: 1.2rem;
     font-weight: 700;
-    color: var(--color-primary-dark);
-    line-height: 1.25;
+    color: var(--color-primary);
+    align-items: top;
+    line-height: 1.25;     
+    margin-bottom: 0; /* Usuwa pomarańczowy margines z dołu */
+    margin-top: 0;    /* Na wszelki wypadek usuwa też górny */
+    display: inline-flex;    /* Układa ikonę i tekst w jednej linii */
+    align-items: center;     /* Centruje ikonę i tekst idealnie w pionie */
+    gap: 0.5rem;             /* Tworzy estetyczny odstęp między ikoną a tekstem */
 }
 
 .method-card p,
@@ -726,11 +755,19 @@ body::after {
     align-items: flex-start;
     justify-content: space-between;
     gap: 1rem;
-    margin-bottom: 0.6rem;
+    margin: 0;
 }
 
 .pricing-price {
-    display: inline-block;
+    grid-column: 2;
+    grid-row: 1 / 3; /* Scalenie wiersza 1 i 2 */ 
+    gap: 0rem;  
+    grid-template-rows: auto auto; 
+    /* IDEALNE CENTROWANIE TEKSTU W KANALE KAPSUŁKI */
+    display: flex;
+    align-items: center;      /* Środkowanie pionowe ceny */
+    justify-content: center;   /* Środkowanie poziome ceny */
+    align-self: center;        /* Środkowanie samej kapsułki w pionie siatki */
     padding: 0.35rem 0.85rem;
     border-radius: 999px;
     background: linear-gradient(135deg, rgba(69, 104, 80, 0.15), rgba(69, 104, 80, 0.25));
@@ -765,12 +802,14 @@ body::after {
 
 .location-card li,
 .contact-card li {
+    
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
     padding-bottom: 0.65rem;
     border-bottom: 1px solid rgba(69, 104, 80, 0.14);
 }
+ 
 
 .location-card li:last-child,
 .contact-card li:last-child {
@@ -780,7 +819,7 @@ body::after {
 
 .location-card span,
 .contact-card span {
-    font-size: 0.75rem;
+    font-size: 0.90rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--color-primary);
@@ -801,6 +840,7 @@ body::after {
     text-decoration: none;
     font-weight: 700;
     transition: color 0.2s ease;
+    cursor: pointer;
 }
 
 .location-card a:hover,
@@ -1021,6 +1061,7 @@ body::after {
     .card {
         padding: 1.5rem 1.25rem;
         border-radius: 20px;
+        
     }
 
     .section-header h2 {
@@ -1108,4 +1149,24 @@ body::after {
 @keyframes navBarSlide {
     from { transform: scaleY(0); opacity: 0; }
     to   { transform: scaleY(1); opacity: 0.9; }
+}
+
+
+.content__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    flex-shrink: 0;
+    color: var(--color-primary-dark);
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.content__icon svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    display: block;
+    stroke-width: 2;
+    vector-effect: non-scaling-stroke;
 }
