@@ -1,0 +1,41 @@
+{
+    "title": "Pierwsza wizyta",
+    "subtitle": "Pierwsza wizyta to spokojne, uporządkowane spotkanie, podczas którego poznaję Twoje potrzeby, wykonuję delikatną ocenę funkcjonalną i ustalam plan terapii dopasowany do Ciebie.",
+    "steps": [
+        {
+            "title": "Jak przygotować się do pierwszej wizyty",
+            "has_icon": true,
+            "svg_inner": "<path d='M13 5h8'\/><path d='M13 12h8'\/><path d='M13 19h8'\/><path d='m3 17 2 2 4-4'\/><path d='m3 7 2 2 4-4'\/>",
+            "desc": "* Załóż wygodny, niekrępujący ruchów strój.\r\n* Zabierz dokumentację medyczną oraz wyniki badań (jeśli je posiadasz).\r\n* Przygotuj listę przyjmowanych leków i przebytych urazów lub operacji.\r\n* Zastanów się, od kiedy występują dolegliwości i co je nasila lub zmniejsza.\r\n* Jeśli masz pytania – śmiało je zadaj podczas wizyty.",
+            "wide": true
+        },
+        {
+            "title": "Rozmowa i poznanie Twoich potrzeb",
+            "has_icon": true,
+            "svg_inner": "<path d='M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z'\/><path d='M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1'\/>",
+            "desc": "Spokojna rozmowa, w której pytam o dolegliwości, ich historię, Twój style życia, obawy i cele. Uważnie słucham, aby zrozumieć, czego naprawdę potrzebujesz — bez pośpiechu i w bezpiecznej atmosferze.",
+            "wide": false
+        },
+        {
+            "title": "Terapia dopasowana do Ciebie",
+            "has_icon": true,
+            "svg_inner": "<path d='M10 5H3'\/><path d='M12 19H3'\/><path d='M14 3v4'\/><path d='M16 17v4'\/><path d='M21 12h-9'\/><path d='M21 19h-5'\/><path d='M21 5h-7'\/><path d='M8 10v4'\/><path d='M8 12H3'\/>",
+            "desc": "W zależności od potrzeb łączę różne formy pracy — terapia jest indywidualna i nieoparta on sztywnych schematach. Dostosowuję tempo i intensywność do Twojego aktualnego samopoczucia.",
+            "wide": false
+        },
+        {
+            "title": "Ocena funkcjonalna",
+            "has_icon": true,
+            "svg_inner": "<path d='M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5'\/><path d='M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27'\/>",
+            "desc": "Badanie obejmuje ocenę zakresów ruchu, napięć mięśniowych, wzorców ruchowych oraz sposobu oddychania. Na każdym etapie informuję, co robię i dhaczego, abyś czuł\/a się w pełni komfortowo.",
+            "wide": false
+        },
+        {
+            "title": "Wskazówki po wizycie",
+            "has_icon": true,
+            "svg_inner": "<path d='M13 5h8'\/><path d='M13 12h8'\/><path d='M13 19h8'\/><path d='m3 17 2 2 4-4'\/><rect x='3' y='4' width='6' height='6' rx='1'\/>",
+            "desc": "Na koniec otrzymujesz proste, realne do wykonania ćwiczenia oraz wskazówki jak dbać o ciało na co dzień. W razie pytań po wizycie pozostaję do Twojej dyspozycji.",
+            "wide": false
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "title": "Metody pracy",
+    "subtitle": "W pracy wykorzystuję sprawdzone, bezpieczne i skuteczne metody terapeutyczne. Każdą z nich dobieram indywidualnie do Twojego aktualnego stanu i celów.",
+    "methods": [
+        {
+            "title": "Terapia powięziowa",
+            "has_icon": false,
+            "svg_inner": "",
+            "desc": "Skupia się przede wszystkim na pracy z powięzią, czyli tkanką Łączna otaczającą mięśnie, narządy i inne struktury. Jej celem jest poprawa ślizgu tkanek aby przywrócić jej funkcje i zmniejszyć ból, napięcie oraz poprawić jej ruchomość.",
+            "wide": false
+        },
+        {
+            "title": "Terapia manualna",
+            "has_icon": false,
+            "svg_inner": "",
+            "desc": "Specjalistyczne techniki wykonywane rękami fizjoterapeuty, których celem jest zmniejszenie dolegliwości bólowych, poprawa ruchomości oraz przywrócenie prawidłowej funkcji układu ruchowego.",
+            "wide": false
+        },
+        {
+            "title": "Masaż tkanek głębokich",
+            "has_icon": false,
+            "svg_inner": "",
+            "desc": "Metoda pracy z mięśniami i powięzią, polegająca na powolnym precyzyjnym opracowaniu głębiej położonych tkanek. Celem terapii jest zmniejszenie bólu, rozluźnienie przewlekłych napięć, poprawa ruchomości oraz przywrócenie prawidłowej funkcji układu ruchu.",
+            "wide": false
+        },
+        {
+            "title": "Rehabilitacja ortopedyczna",
+            "has_icon": false,
+            "svg_inner": "",
+            "desc": "Pomoc w powrocie do sprawności po urazach, złamaniach i zabiegach operacyjnych oraz w leczeniu dolegliwości związanych z przeciążeniami narządu ruchu.",
+            "wide": false
+        },
+        {
+            "title": "Trening medyczny",
+            "has_icon": false,
+            "svg_inner": "",
+            "desc": "indywidualnej dobrane ćwiczenia do możliwości pacjenta wspomagające powrót do sprawności po urazach i operacjach. Trening medyczny  jest również skuteczna metoda w leczeniu przewlekłych dolegliwości bólowych, pomaga:\r\n* Poprawić postawę ciała \r\n* Wypracować prawidłowe wzorce ruchowe \r\n* Zwiększyć siłę i stabilizacje\r\n* Ograniczyć występowanie przeciążeń \r\n\r\nPacjent uczyć się jak świadomie dbać o swoje ciało i zmniejszyć ryzyko nawrotu dolegliwości.",
+            "wide": false
+        },
+        {
+            "title": "Rehabilitacja neurologiczna",
+            "has_icon": false,
+            "svg_inner": "",
+            "desc": "terapia wspierająca osoby z chorobami i uszkodzeniami układu nerwowego, mająca na celu poprawę sprawności, równowagi, koordynacji i samodzielności.\r\nRehabilitacja skierowana jest m.in. do pacjentów:\r\n* po udarze mózgu,\r\n* po urazach mózgu i rdzenia kręgowego,\r\n* z chorobą Parkinsona,\r\n* ze stwardnieniem rozsianym,\r\n* z zaburzeniami równowagi i chodu,\r\n* z osłabieniem siły mięśniowej oraz trudnościami w poruszaniu się.",
+            "wide": false
+        },
+        {
+            "title": "Fizjoterapia w ciąży po cesarskim cięciu lub epizjotomii",
+            "has_icon": false,
+            "svg_inner": "",
+            "desc": "Okres po porodzie to czas, w którym organizm potrzebuje odpowiedniego wsparcia. Fizjoterapia pomaga zmniejszyć dolegliwości związane z blizną po cesarskim cięciu lub nacięciu krocza (episiotomii), poprawić ruchomość tkanek oraz bezpiecznie wrócić do codziennej aktywności.",
+            "wide": false
+        },
+        {
+            "title": "Kinesiotaping",
+            "has_icon": false,
+            "svg_inner": "",
+            "desc": "Aplikacja elastycznych plastrów wspierających pracę mięśni i stawów, zmniejszających ból, obrzęk oraz wspomagających proces regeneracji. Stanowią  pomoc w procesie rehabilitacji. \r\nZastosowanie: \r\n* przy bólach mięśni i stawów\r\n* po urazach i przeciążeniach\r\n* w redukcji obrzęków i siniaków\r\n* jako wsparcie podczas powrotu do aktywności fizycznej\r\n* w korekcji wybranych wzorców ruchowych i postawy ciała",
+            "wide": false
+        }
+    ]
+}

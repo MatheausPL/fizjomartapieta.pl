@@ -1,0 +1,20 @@
+RewriteEngine On
+
+# Blokada botów po User-Agent
+RewriteCond %{HTTP_USER_AGENT} ^.*(curl|wget|python|bot|spider|crawler).* [NC]
+RewriteRule ^ - [F]
+
+# (opcjonalnie) whitelist IP - odkomentuj, jeśli chcesz tylko swoje IP
+# Order deny,allow
+# Deny from all
+# Allow from 83.22.111.55
+
+# Strona startowa panelu admina
+DirectoryIndex login.php
+
+# 🔥 WYŁĄCZENIE CACHE DLA JSON
+<FilesMatch "\.json$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+</FilesMatch>

@@ -1,0 +1,48 @@
+{
+    "title": "Lokalizacja i dojazd",
+    "subtitle": "Pracuję w Jaworznie i okolicach, oferując zarówno dogodne wizyty domowe, jak i przyjęcia w profesjonalnym gabinecie.",
+    "cards": [
+        {
+            "title": "Wizyty domowe",
+            "has_icon": true,
+            "svg_inner": "<path d='M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8'\/>\r\n                                        <path d='M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'\/>",
+            "desc": "Dojeżdżam do pacjentów w komfortowym środowisku domowym — bez pośpiechu i w przyjaznej atmosferze.",
+            "wide": false,
+            "details": [
+                {
+                    "label": "Obszar dojazdu",
+                    "value": "Jaworzno, Sosnowiec, Chrzanów, Mysłowice i okolice",
+                    "is_link": false,
+                    "url": ""
+                },
+                {
+                    "label": "Forma terapii",
+                    "value": "Wygodna rehabilitacja u Ciebie w domu",
+                    "is_link": false,
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "title": "Gabinet Delmed Clinic",
+            "has_icon": true,
+            "svg_inner": "<path d='M12 7v4'\/>\r\n                                        <path d='M14 21v-3a2 2 0 0 0-4 0v3'\/><path d='M14 9h-4'\/><path d='M18 11h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h2'\/>\r\n                                        <path d='M18 21V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16'\/>",
+            "desc": "Przyjmuję w gabinecie raz w tygodniu, jeśli wolisz terapię w warunkach klinicznych.",
+            "wide": false,
+            "details": [
+                {
+                    "label": "Placówka",
+                    "value": "Delmed Clinic - ul. Bogusławskiego 5, 43-600 Jaworzno",
+                    "is_link": false,
+                    "url": ""
+                },
+                {
+                    "label": "Strona WWW",
+                    "value": "DELMED Clinic",
+                    "is_link": true,
+                    "url": "https:\/\/delmed.pl\/poradnie\/fizjoterapia\/"
+                }
+            ]
+        }
+    ]
+}

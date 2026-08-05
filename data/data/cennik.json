@@ -1,0 +1,31 @@
+{
+    "title": "Cennik",
+    "subtitle": "Wszystkie wizyty obejmują indywidualną ocenę oraz terapię dopasowaną bezpośrednio do Twoich potrzeb.",
+    "items": [
+        {
+            "name": "Wizyta w domu pacjenta",
+            "price": "180 zł",
+            "desc": "Kompleksowa terapia w komfortowym środowisku domowym wraz z dojazdem."
+        },
+        {
+            "name": "Wizyta w gabinecie",
+            "price": "160 zł",
+            "desc": "Ocena funkcjonalna, terapia manualna oraz plan dalszej pracy w gabinecie."
+        },
+        {
+            "name": "Suche igłowanie \/ Terapia powięziowa",
+            "price": "150 zł",
+            "desc": "Specjalistyczne techniki celowane wspierające terapię manualną i zniesienie bólu."
+        },
+        {
+            "name": "Trening medyczny",
+            "price": "160 zł",
+            "desc": "Indywidualne ćwiczenia terapeutyczne dostosowane do Twojego celu sprawnościowego."
+        },
+        {
+            "name": "Kinesiotaping",
+            "price": "20 - 40 zł",
+            "desc": "Zaopatrzenie taśmami zależnie od obszaru zabiegowego."
+        }
+    ]
+}

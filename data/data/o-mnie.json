@@ -1,0 +1,49 @@
+{
+    "subtitle": "Poznajmy się",
+    "header_text": "Indywidualna terapia oparta na przyczynie problemu oraz terapia ruchowa dostosowana do twoich możliwości.",
+    "items": [
+        {
+            "text": "Nazywam się Marta Pięta i jestem fizjoterapeutką z ponad 10-letnim stażem. Pracuję z pacjentami z dolegliwościami bólowymi narządu ruchu, po urazach oraz z problemami ortopedycznymi i przewlekłym bólem."
+        },
+        {
+            "text": "W swojej pracy łączę terapię manualną, ćwiczenia terapeutyczne oraz indywidualnie dobrane metody leczenia. Zależy mi nie tylko na zmniejszeniu bólu, ale przede wszystkim na znalezieniu jego przyczyny i przywróceniu pełnej sprawności."
+        },
+        {
+            "text": "Obecnie rozwijam swoje kompetencje w zakresie fizjoterapii uroginekologicznej, aby kompleksowo wspierać kobiety na różnych etapach życia. Regularnie uczestniczę w kursach i szkoleniach, dzięki czemu mogę stosować nowoczesne metody terapii."
+        },
+        {
+            "text": "Największą satysfakcję daje mi obserwowanie, jak dzięki wspólnej pracy pacjenci odzyskują komfort życia i wracają do aktywności."
+        }
+    ],
+    "image": "img\/photos\/marta.webp",
+    "focus_title": "w czym mogę Ci pomóc",
+    "focus_items": [
+        {
+            "text": "Rehabilitacja ortopedyczna i pooperacyjne"
+        },
+        {
+            "text": "Terapia bólu kręgosłupa i stawów obwodowych"
+        },
+        {
+            "text": "Fizjoterapia neurologiczna"
+        },
+        {
+            "text": "Fizjoterapia kobiet - ból w ciąży oraz różne dolegliwości, fizjoterapia i igłoterapia po cesarskim cięciu i epizjotomii"
+        },
+        {
+            "text": "Pinoterapia"
+        },
+        {
+            "text": "Elementy osteopatii"
+        },
+        {
+            "text": "Terapia Manualna"
+        },
+        {
+            "text": "Profilaktyka urazów i edukacja pacjenta"
+        },
+        {
+            "text": "Trening medyczny"
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "title": "Napisz lub zadzwoń",
+    "wide": false,
+    "subtitle": "Jeśli chcesz umówić wizytę lub uzyskać dodatkowe informacje, skontaktuj się ze mną bezpośrednio.",
+    "sections": [
+        {
+            "title": "Dane kontaktowe",
+            "has_icon": true,
+            "svg_inner": "<path d='M16 2v2'\/><path d='M7 21v-2a2 2 0 012-2h6a2 2 0 012 2v2'\/><path d='M8 2v2'\/><circle cx='12' cy='10' r='3'\/><rect x='3' y='3' width='18' height='18' rx='2'\/>",
+            "wide": false,
+            "fields": [
+                {
+                    "label": "Telefon",
+                    "value": "+48 453 482 415",
+                    "type": "tel",
+                    "link_value": "+48453482415"
+                },
+                {
+                    "label": "E-mail",
+                    "value": "fizjo.marta.pieta@outlook.com",
+                    "type": "email",
+                    "link_value": "fizjo.marta.pieta@outlook.com"
+                },
+                {
+                    "label": "Rezerwacja",
+                    "value": "Telefonicznie lub e-mailowo",
+                    "type": "text",
+                    "link_value": ""
+                },
+                {
+                    "label": "Terminy",
+                    "value": "Ustalane indywidualnie",
+                    "type": "text",
+                    "link_value": ""
+                }
+            ]
+        },
+        {
+            "title": "Informacje o praktyce",
+            "has_icon": true,
+            "svg_inner": "<circle cx='12' cy='12' r='10'\/><path d='M12 16v-4'\/><path d='M12 8h.01'\/>",
+            "wide": false,
+            "fields": [
+                {
+                    "label": "Nazwa",
+                    "value": "Fizjoterapia Marta Pięta",
+                    "type": "text",
+                    "link_value": ""
+                },
+                {
+                    "label": "Numer PWZFz",
+                    "value": "19460",
+                    "type": "text",
+                    "link_value": ""
+                },
+                {
+                    "label": "NIP",
+                    "value": "6321975004",
+                    "type": "text",
+                    "link_value": ""
+                },
+                {
+                    "label": "REGON",
+                    "value": "529779494",
+                    "type": "text",
+                    "link_value": ""
+                }
+            ]
+        }
+    ]
+}
